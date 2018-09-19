@@ -1,4 +1,12 @@
 language: node_js
 node_js: node
 services:
-- mongodb
+  - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: JyoP5sUeuk3SDdQTrCm9E9ci5HQr6BDcnI7KW9tZK1LxGkX3vzv8eVCmo8NrZE/jhZpWKH8tZNCQ+kZQ6uN4wxkLL3COUDUuo62yAFvMDhZGYH9A2Dtrqzc41v4QD6KZ3W9BZ1dS8tYc54+iUg74Krd6iFaLsTWnZuSzYrwRHGgZbFVSwP+OVaImwAAPmoiN9hzkSKNlD62oNGbhQstcVZGQ+W+ASv8VWeUJcWu8/F8Swf5hJfeS30bMt4YHwc9sHHrHwUtdDoEEvGFWs4BvYNBg1RkZqf2VWUxUBmN1HNr0Gum928hId8LaU/gyG/qVfKAnksl5OBeq5zUJDktiKoaXfQj5ooRAJ/bVveGHLNrvbLIH0ZnO8ieboaAwf8Uhhh1I58LB6ofB6qCEzD/ij2Ei9k3PTZ/hSJsOpfxWcLDBgVYw3ZrJNXs1ttz3yaDMeTAsM3cerGlX/3ugsGEm9a13dGfG9Ytfcyy5y/988Ufd0MTh1pKaaPbue/nJlLMiBP+8NdNo4t0T+siAchiWRVxPb3XAO6TnBFR2mOcrQqKTR9NjWpllq8PvCV2XxtMuI3qwKkkFV9XB3rqYNknOw80OggxvCbBoiLyreJmDlmTY36LDC8RcX7J3g7V5Tpy6XLk0FZdzEeNkM5XC5LVXMlaOrnVkJhguHohGXPBHLJU=
+  app: salty-ravine-92270
+  on:
+    repo: alexgutes/alex-node-restaurants-mongoose
+    branch: feature/with-tests
